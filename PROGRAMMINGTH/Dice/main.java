@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main{
+class Main{
   public static void main(String[]args){
     Scanner in = new Scanner(System.in);
     int dice = in.nextInt();
@@ -27,7 +27,7 @@ public class main{
           left = top; //1
           top = right; //4
           right = bottom; //6
-          bottom = left; //3
+          bottom = temp; //3
         }
         if(direct.charAt(j) == 'R'){
           temp = right; //4
@@ -51,7 +51,7 @@ public class main{
           front = temp; //3
         }
         if(j == direct.length()-1){
-          System.out.println(front);
+          System.out.print(front + "  ");
         }
       }
     }
