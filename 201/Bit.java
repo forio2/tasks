@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 class Bits{  
   public static void main(String[]args){
-    long start = System.currentTimeMillis();
     Scanner in = new Scanner(System.in);
     int n = in.nextInt();
     int arr[] = new int[n];
@@ -28,7 +27,7 @@ class Bits{
       }
       System.out.println();
     }
-    long end = System.currentTimeMillis();
-    System.out.println("Execution time was "+(end-start)+" ms.");
+    long a = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()/1000;
+    System.out.print(a);
   }
 }

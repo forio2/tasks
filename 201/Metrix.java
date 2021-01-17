@@ -3,18 +3,16 @@ import java.util.Scanner;
 class Metrix{
   public static void main(String[]args){
    Scanner in = new Scanner(System.in);
-   int column = in.nextInt();
-   int row = in.nextInt();
-   int arr[][] = new int[column][row];
-   for(int i=0;i<column;i++){
-     for(int j=0;j<row;j++){
+   int arr[][] = new int[2][3];
+   for(int i=0;i<2;i++){
+     for(int j=0;j<3;j++){
        arr[i][j] = in.nextInt();
      }
    }
 
-   for(int i=0;i<column;i++){
-     for(int j=0;j<row;j++){
-       System.out.print(arr[i][j] + " ");
+   for(int i=0;i<2;i++){
+     for(int j=0;j<3;j++){
+       System.out.print(arr[i][2-j] + " ");
      }
      System.out.println();
    }
