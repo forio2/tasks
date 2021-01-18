@@ -27,7 +27,5 @@ class Bits{
       }
       System.out.println();
     }
-    long a = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()/1000;
-    System.out.print(a);
   }
 }
